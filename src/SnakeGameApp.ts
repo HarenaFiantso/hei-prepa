@@ -30,9 +30,11 @@ export class SnakeGameApp {
 
   private async runGameLoop(): Promise<void> {
     try {
-      this.state.render();
-      await this.state.update();
-      await new Promise((resolve) => setTimeout(resolve, 100));
+      while (true) {
+        this.state.render();
+        await this.state.update();
+        await new Promise((resolve) => setTimeout(resolve, 100));
+      }
     } catch (error) {
       console.error("Error in game loop:", error);
       Deno.exit(1);
