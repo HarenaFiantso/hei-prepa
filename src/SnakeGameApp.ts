@@ -1,5 +1,14 @@
+import figlet from "npm:figlet";
+
 export class SnakeGameApp {
   run(): void {
-    console.log("Running Snake Game");
+    figlet("Snake Game!", (err: unknown, data: string | undefined) => {
+      if (err) {
+        console.log("Something went wrong...");
+        console.dir(err);
+        return;
+      }
+      console.log(data);
+    });
   }
 }
