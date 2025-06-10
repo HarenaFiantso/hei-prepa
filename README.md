@@ -4,7 +4,7 @@ _(Calculatrice et cahier de leçon autorisés)_
 
 ## Démonstration
 
-<video src="./public/snake-game.mp4" controls muted width="700"></video>
+https://github.com/user-attachments/assets/e5556f04-a101-41af-af41-69f84553e18f
 
 ## 🎯 Objectifs
 
