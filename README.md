@@ -2,6 +2,10 @@
 
 _(Calculatrice et cahier de leçon autorisés)_
 
+## Démonstration
+
+<video src="./public/snake-game.mp4" controls muted width="700"></video>
+
 ## 🎯 Objectifs
 
 Développer un mini-moteur du **Snake Game** en console, en appliquant les
@@ -26,9 +30,9 @@ Vous devez implémenter une version simplifiée du jeu **Snake** :
 - Un serpent qui avance automatiquement
 - De la nourriture apparaît à des positions aléatoires
 - À chaque tick :
-  - Le serpent avance
-  - Il peut manger
-  - Il peut mourir (collision mur ou corps)
+    - Le serpent avance
+    - Il peut manger
+    - Il peut mourir (collision mur ou corps)
 - Le jeu passe par plusieurs **états** (menu, en cours, terminé)
 - Le comportement du serpent est découplé par **stratégie de déplacement**
 
@@ -79,9 +83,9 @@ Construit un serpent initial (position, longueur, direction).
 
 - Interface ou classe abstraite
 - Implémentations :
-  - `MenuState`
-  - `RunningState`
-  - `GameOverState`
+    - `MenuState`
+    - `RunningState`
+    - `GameOverState`
 
 ### 8. `Game`
 
@@ -99,15 +103,15 @@ croissance...).
 ## 🧪 Étapes de développement (suggestion)
 
 | Étape | Fonctionnalité                                     | Principes appliqués |
-| ----- | -------------------------------------------------- | ------------------- |
-| ✅ 1  | Déplacement simple du serpent                      | KISS, Naming        |
-| ✅ 2  | Apparition de nourriture                           | Factory, YAGNI      |
-| ✅ 3  | Croissance du serpent                              | DRY                 |
-| ✅ 4  | Détection de collision avec les murs               | KISS                |
-| ✅ 5  | Collision avec soi-même                            | DRY                 |
-| ✅ 6  | Initialisation via Builder                         | Builder             |
-| ✅ 7  | Séparation du comportement de mouvement            | Strategy            |
-| ✅ 8  | Gestion des états du jeu (menu, en cours, terminé) | State               |
+|-------|----------------------------------------------------|---------------------|
+| ✅ 1   | Déplacement simple du serpent                      | KISS, Naming        |
+| ✅ 2   | Apparition de nourriture                           | Factory, YAGNI      |
+| ✅ 3   | Croissance du serpent                              | DRY                 |
+| ✅ 4   | Détection de collision avec les murs               | KISS                |
+| ✅ 5   | Collision avec soi-même                            | DRY                 |
+| ✅ 6   | Initialisation via Builder                         | Builder             |
+| ✅ 7   | Séparation du comportement de mouvement            | Strategy            |
+| ✅ 8   | Gestion des états du jeu (menu, en cours, terminé) | State               |
 
 ---
 
@@ -152,7 +156,7 @@ croissance...).
 Le joueur peut changer la direction du serpent via les **touches suivantes** :
 
 | Touche | Direction |
-| ------ | --------- |
+|--------|-----------|
 | `W`    | Haut      |
 | `S`    | Bas       |
 | `A`    | Gauche    |
