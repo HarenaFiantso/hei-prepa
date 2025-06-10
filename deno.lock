@@ -4,9 +4,7 @@
     "jsr:@std/assert@1": "1.0.13",
     "jsr:@std/internal@^1.0.6": "1.0.8",
     "npm:figlet@*": "1.8.1",
-    "npm:figlet@^1.8.1": "1.8.1",
-    "npm:prompt-sync@*": "4.2.0",
-    "npm:prompt-sync@^4.2.0": "4.2.0"
+    "npm:figlet@^1.8.1": "1.8.1"
   },
   "jsr": {
     "@std/assert@1.0.13": {
@@ -20,31 +18,15 @@
     }
   },
   "npm": {
-    "ansi-regex@4.1.1": {
-      "integrity": "sha512-ILlv4k/3f6vfQ4OoP2AGvirOktlQ98ZEL1k9FaQjxa3L1abBgbuTDAdPOpvbGncC0BTVQrl+OM8xZGK6tWXt7g=="
-    },
     "figlet@1.8.1": {
       "integrity": "sha512-kEC3Sme+YvA8Hkibv0NR1oClGcWia0VB2fC1SlMy027cwe795Xx40Xiv/nw/iFAwQLupymWh+uhAAErn/7hwPg==",
       "bin": true
-    },
-    "prompt-sync@4.2.0": {
-      "integrity": "sha512-BuEzzc5zptP5LsgV5MZETjDaKSWfchl5U9Luiu8SKp7iZWD5tZalOxvNcZRwv+d2phNFr8xlbxmFNcRKfJOzJw==",
-      "dependencies": [
-        "strip-ansi"
-      ]
-    },
-    "strip-ansi@5.2.0": {
-      "integrity": "sha512-DuRs1gKbBqsMKIZlrffwlug8MHkcnpjs5VPmL1PAh+mA30U0DTotfDZ0d2UUsXpPmPmMMJ6W773MaA3J+lbiWA==",
-      "dependencies": [
-        "ansi-regex"
-      ]
     }
   },
   "workspace": {
     "dependencies": [
       "jsr:@std/assert@1",
-      "npm:figlet@^1.8.1",
-      "npm:prompt-sync@^4.2.0"
+      "npm:figlet@^1.8.1"
     ]
   }
 }
