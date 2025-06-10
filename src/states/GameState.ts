@@ -1,7 +1,7 @@
 import { SnakeGameApp } from "../SnakeGameApp.ts";
 
 export abstract class GameState {
-  constructor(private game: SnakeGameApp) {
+  constructor(protected readonly game: SnakeGameApp) {
   }
 
   public abstract update(): Promise<void>;
