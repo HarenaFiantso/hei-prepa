@@ -9,7 +9,12 @@ export class SnakeGameApp {
     this.state = new MenuState(this);
   }
 
-  run(): void {
+  public async setState(newState: GameState) {
+    this.state = newState;
+    await this.runGameLoop();
+  }
+
+  public run(): void {
     figlet("Snake Game!", (err: unknown, data: string | undefined) => {
       if (err) {
         console.log("Something went wrong...");
@@ -25,11 +30,9 @@ export class SnakeGameApp {
 
   private async runGameLoop(): Promise<void> {
     try {
-      while (true) {
-        this.state.render();
-        await this.state.update();
-        await new Promise((resolve) => setTimeout(resolve, 100));
-      }
+      this.state.render();
+      await this.state.update();
+      await new Promise((resolve) => setTimeout(resolve, 100));
     } catch (error) {
       console.error("Error in game loop:", error);
       Deno.exit(1);

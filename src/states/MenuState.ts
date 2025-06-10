@@ -1,4 +1,5 @@
 import { GameState } from "./GameState.ts";
+import { RunningState } from "./RunningState.ts";
 
 export class MenuState extends GameState {
   public async update(): Promise<void> {
@@ -7,6 +8,7 @@ export class MenuState extends GameState {
 
     if (choice === "y") {
       console.log("The game is starting");
+      await this.game.setState(new RunningState(this.game));
     } else if (choice === "n") {
       Deno.exit(0);
     } else {
